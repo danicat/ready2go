@@ -1,0 +1,202 @@
+Ready 2 Go
+Uma Introdução Prática a Linguagem Go
+11 Jan 2018
+Tags: gdg-poa, golang
+
+Daniela Petruzalek
+Senior Software Engineer, Globo.com
+daniela.petruzalek@gmail.com
+https://github.com/danicat
+@danicat83
+
+* Agenda
+
+- O que é o Go?
+
+- Estrutura básica do programa
+
+- Concorrência
+
+.image GOPHER_LEARN.png _ 400
+
+* Workshop Ready 2 Go
+
+Versão completa do Workshop:
+
+[[https://github.com/ellenkorbes/ready-to-go]]
+
+Altamente recomendado: 
+[[https://code.visualstudio.com]]
+
+Alternativa vim-go: 
+[[https://github.com/fatih/vim-go]]
+
+* O que é o Go?
+
+Nasceu no Google em 2007
+
+- Objetivo: escalabilidade / "systems"
+
+Combinar os melhores recursos das linguagens mais populares:
+
+- C/C++
+- Java
+- Python
+
+Princípios básicos:
+
+- Simplicidade
+- Ortogonalidade
+
+* O que NÃO é o Go?
+
+- Uma linguagem orientada a objetos
+- Uma linguagem funcional
+- Uma linguagem de uso genérico (ainda)
+
+.image GOPHER_SAFARI.png _ 300
+
+* Comunidade
+
+Gophers!
+
+.image gopher_6.jpg _ 300
+
+Slack: [[https://invite.slack.golangbridge.org]]
+
+Grupo de estudos: hangouts nas quintas-feiras às 22:00 BRT
+
+[[https://hangouts.google.com/hangouts/_/crg.eti.br/golang]]
+
+* Usos de Go pelo mundo
+
+.image google.png _ 300
+.image dropbox.png _ 300
+.image microsoft.png _ 300
+.image globocom.png _ 300
+- [[https://github.com/golang/go/wiki/GoUsers]]
+
+* Interesse ao longo do tempo
+
+Linguagem #9 de acordo com o GitHub em 2017. (+52% em relação a 2016)
+
+.image trend.png _ 800
+
+* Hello world!
+
+.play hello.go
+
+.image GoBuild.png _ 300
+
+* Variáveis
+
+Tipos primitivos: int, bool, string, float64, complex128
+Outras estruturas: struct, array, slice, map
+
+.play var.go
+
+* Ponteiros
+
+Operadores * (derreferência) e & (endereço)
+
+.play pointers.go
+
+* Escopo
+
+- Publico (inicial maiuscula)
+- privado (inicial minuscula)
+
+.code testpkg.go
+
+.code scope.go /^func main/,/^}/
+
+* Funções
+
+.play func.go
+
+* Funções #2
+
+.play func2.go
+
+* Controle de Fluxo
+
+.play for.go /^func main/,/^}/
+
+* Controle de Fluxo #2
+
+.play switch.go /START OMIT/,/END OMIT/
+
+* Arrays
+
+.play array.go /START OMIT/,/END OMIT/
+
+* Slices
+
+.play slice.go /START OMIT/,/END OMIT/
+
+* Maps
+
+.play map.go /START OMIT/,/END OMIT/
+
+* Structs
+
+.play struct.go /START OMIT/,/END OMIT/
+
+* Métodos
+
+.play methods.go
+
+* Interfaces
+
+.play interface.go /START OMIT/,/END OMIT/
+
+* Goroutines
+
+.play goroutine.go /START OMIT/,/END OMIT/
+
+* Channels
+
+.play chan.go /START OMIT/,/END OMIT/
+
+* Tipos de Channels #1
+
+.play chan2a.go /START OMIT/,/END OMIT/
+
+* Tipos de Channels #2
+
+.play chan2b.go /START OMIT/,/END OMIT/
+
+* Técnicas de Concorrência
+
+.play chan3.go /START OMIT/,/END OMIT/
+
+* Pipeline
+
+.play pipeline.go /START OMIT/,/END OMIT/
+
+* Programação Concorrente #1
+
+.play conc.go /START OMIT/,/END OMIT/
+
+* Programação Concorrente #2
+
+.play conc2.go /START OMIT/,/END OMIT/
+
+* Programação Concorrente #3
+
+.play conc3.go /START OMIT/,/END OMIT/
+
+* Palavras Finais
+
+- A proposta do Go é ser simples e consistente
+- A palavra chave é **concorrência*
+- Não tem **generics*!!!
+
+* Referências
+
+- [[https://www.golang.org]]
+- [[https://blog.golang.org]]
+- [[https://golang.org/doc]]
+
+
+.image GoCommunity.png _ 600
